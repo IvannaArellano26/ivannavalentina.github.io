@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenidos</title>
+    <style>
+        body {
+            background-color: #f5e6cc;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        h1 {
+            color: #4682b4;
+            font-family: 'Brush Script MT', 'cursive';
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="SALUDITO"></h1>
+
+    <script>
+        let nombre = localStorage.getItem("nombre");
+        document.getElementById("SALUDITO").innerText = "Bienvenid@ " + nombre;
+
+        setTimeout(function() {
+            window.location.href = "introduccion.html";
+        }, 5000);
+    </script>
+
+</body>
+</html>

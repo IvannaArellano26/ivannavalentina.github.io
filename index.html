@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+</head>
+<body>
+
+<script>
+       let nombre = prompt("Escribe tus nombres:");
+
+    if (nombre !== null && nombre !== "") {
+        localStorage.setItem("nombre", nombre);
+        window.location.href = "bienvenidos.html";
+    } else {
+        alert("No escribiste tu nombre");
+    }
+</script>
+
+</body>
+</html>
